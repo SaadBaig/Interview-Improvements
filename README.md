@@ -33,8 +33,11 @@ Output:
 ```
 
 I was asked how to find the operating system information for a Linux machine. I didn't know outside of prodding using nmaps -sV flag because pentesting. But now I do:
-```➜  ~ uname -a
-Darwin Saads-MacBook-Pro.local 19.5.0 Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64 x86_64```
+
+```bash
+➜  ~ uname -a
+Darwin Saads-MacBook-Pro.local 19.5.0 Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64 x86_64
+```
 
 I was asked how to find out which program is using the most amount of CPU usage. I had 0 clue. I knew it used the command ```ps aux```, but I couldn't figure out the rest.The command was ```ps aux | sort -nrk 3,3 | head -n 5```:
 
