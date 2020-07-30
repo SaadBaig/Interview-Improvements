@@ -2,17 +2,15 @@
 
 Back to basics. This interview was for a Junior Systems Engineer position, and I don't think I did that well. Lets change that:
 
-I was asked to create a program that would output how many times the word test appears on every line in a file. I created my own "test.txt" file:
+I was asked to create a program that would output how many times the word test appears on every line in a file. I created my own "test.txt" file with the following contents:
 
+```
 This is a test of the emergency test system
-
 Testing to see if my program can detect multiple tests in a single line
-
 Please test my program to see if it can read the test.txt file and outputs the number of tests per line. 
-
 Test test test test test
-
 Best, rest, messed, blessed, testy test test
+```
 
 I created a script in Python which is also attached in this repo, that does this functionality. Here's the program and the output:
 
@@ -49,4 +47,4 @@ _hidd              159   2.1  0.0  5610004   9468   ??  Ss   10Jul20  54:24.81 /
 
 I was asked where a majority of Linux config files are located. I incorrectly said ```/bin```. It was ```/etc```. 
 
-I was given a scenario where a server wasn't resolving to the correct IP address. Assuming we didn't have access to the localhosts file, how could we force an ARP cache reset. I didn't know. Until now. In the DNS stack, there exists, TTL or Time to Live. TTL can be thought of as an expiration date that is put on a DNS record and tells the resolver how long it should keep said record in its cache. For example, we can set example.com's TTL for 3600 seconds or 1 hour. This means that the resolver will no query to the server until the TTL runs out. 
+I was given a scenario where a server wasn't resolving to the correct IP address. Assuming we didn't have access to the localhosts file, how could we force an ARP cache reset. I didn't know. Until now. In the DNS stack, there exists, TTL or Time to Live. TTL can be thought of as an expiration date that is put on a DNS record and tells the resolver how long it should keep said record in its cache. For example, we can set example.com's TTL for 3600 seconds or 1 hour. This means that the resolver will not query to the server until the TTL runs out. So if we needed this resolver to fetch a new version of the page ASAP, we need to set our TTL to the minimum value of 1.
