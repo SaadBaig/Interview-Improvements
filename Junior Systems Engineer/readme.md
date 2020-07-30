@@ -5,9 +5,13 @@ Back to basics. This interview was for a Junior Systems Engineer position, and I
 I was asked to create a program that would output how many times the word test appears on every line in a file. I created my own "test.txt" file:
 
 This is a test of the emergency test system
+
 Testing to see if my program can detect multiple tests in a single line
+
 Please test my program to see if it can read the test.txt file and outputs the number of tests per line. 
+
 Test test test test test
+
 Best, rest, messed, blessed, testy test test
 
 I created a script in Python which is also attached in this repo, that does this functionality. Here's the program and the output:
