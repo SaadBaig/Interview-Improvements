@@ -2,7 +2,7 @@
  
  I decided to make this repo to showcase my weaknesses I was exposed to during technical interviews for various job roles. I want to use this as a showcase of what once were weaknesses that have become strengths. I try to push these updates out within 24 hours of an interview as to keep the information in my head as fresh as possible.
 
-## Junior Systems Engineer 7/29/20
+# Junior Systems Engineer 7/29/20
 
 Back to basics. This interview was for a Junior Systems Engineer position, and I don't think I did that well. Lets change that:
 
@@ -35,10 +35,13 @@ Output:
 ```
 
 I was asked how to find the operating system information for a Linux machine. I didn't know outside of prodding using nmaps -sV flag because pentesting. But now I do:
-```➜  ~ uname -a
-Darwin Saads-MacBook-Pro.local 19.5.0 Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64 x86_64```
 
-I was asked how to find out which program is using the most amount of CPU usage. I had 0 clue. I knew it used the command ```ps aux```, but I couldn't figure out the rest.The command was ```ps aux | sort -nrk 3,3 | head -n 5```:
+```bash
+➜  ~ uname -a
+Darwin Saads-MacBook-Pro.local 19.5.0 Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64 x86_64
+```
+
+I was asked how to find out which program is using the most amount of CPU usage. I knew it used the command ```ps aux```, but I couldn't figure out the rest. The command was ```ps aux | sort -nrk 3,3 | head -n 5```:
 
 ```bash
 ➜  ~ ps aux | sort -nrk 3,3 | head -n 5
@@ -52,6 +55,7 @@ _hidd              159   2.1  0.0  5610004   9468   ??  Ss   10Jul20  54:24.81 /
 I was asked where a majority of Linux config files are located. I incorrectly said ```/bin```. It was ```/etc```. 
 
 I was given a scenario where a server wasn't resolving to the correct IP address. Assuming we didn't have access to the localhosts file, how could we force an ARP cache reset. I didn't know. Until now. In the DNS stack, there exists, TTL or Time to Live. TTL can be thought of as an expiration date that is put on a DNS record and tells the resolver how long it should keep said record in its cache. For example, we can set example.com's TTL for 3600 seconds or 1 hour. This means that the resolver will not query to the server until the TTL runs out. So if we needed this resolver to fetch a new version of the page ASAP, we need to set our TTL to the minimum value of 1.
+
 
 
 ## Cyber Security Analyst II 5/27/20
