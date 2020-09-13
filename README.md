@@ -2,7 +2,7 @@
  
  I decided to make this repo to showcase my weaknesses I was exposed to during technical interviews for various job roles. I want to use this as a showcase of what once were weaknesses that have become strengths. I try to push these updates out within 24 hours of an interview as to keep the information in my head as fresh as possible.
 
-# Junior Systems Engineer 7/29/20
+## Junior Systems Engineer 7/29/20
 
 Back to basics. This interview was for a Junior Systems Engineer position, and I don't think I did that well. Lets change that:
 
